@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --bg-footer: rgb(79, 88, 201);
+  --color-primary-bg: rgb(233, 234, 249);
+  --color-secondary-bg: rgb(245, 245, 255);
+  --color-background-start: rgb(233, 234, 249);
+  --color-background-end: rgb(245, 245, 255);
+  --overlay-bg-color: rgba(0, 0, 0, 0.5);
+  --modal-content-bg-color: #fff;
+  --modal-content-bg-gradient-start: rgb(233, 234, 249);
+  --modal-content-bg-gradient-end: rgb(245, 245, 255);
+
+  --text-color: rgb(255, 255, 255);
+  --color-text: rgb(0, 0, 0);
+  --color-dark: rgb(0, 0, 0);
+  --color-grey: rgb(76, 76, 76);
+  --color-primary: rgb(0, 0, 0);
+  --color-secondary: rgb(76, 76, 76);
+  --color-placeholder: rgb(160, 160, 160);
+  --modal-text-color: rgb(115, 123, 225);
+  --slider-color: rgb(115, 123, 225);
+
+  --font-size-large: 2.25rem;
+  --font-size-main: 2.25rem;
+  --font-size-medium: 1.31rem;
+  --font-size-small: 0.88rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+
+  --line-height-main: 130%;
+  --letter-spacing-main: 0%;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.75rem 1.13rem 0.75rem 1.13rem;
+
+  color: rgb(255, 255, 255);
+  font-size: 1.31rem;
+  font-weight: 400;
+  text-align: left;
+  border-radius: 0.5rem;
+  background: rgb(115, 123, 225);
+}
+a {
+  text-decoration: none;
+}

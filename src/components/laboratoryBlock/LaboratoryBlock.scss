@@ -1,0 +1,50 @@
+.wrapper-laboratory-section {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    var(--color-background-start),
+    var(--color-background-end) 100%
+  );
+}
+
+.laboratory-block {
+  width: 1400px;
+  min-height: 26.75rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.laboratory-title {
+  color: var(--color-primary);
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 2.25rem;
+}
+
+.description-laboratory {
+  color: var(--color-secondary);
+  font-size: var(--font-size-medium);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 2.25rem;
+}
+
+button::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../../../public/images/arrow.svg");
+  margin-left: 0.625rem;
+  margin-top: 0.25rem;
+}
+
+.laboratory-img {
+  width: 50rem;
+  height: 26.75rem;
+}

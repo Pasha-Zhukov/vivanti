@@ -1,0 +1,30 @@
+.slider {
+  position: relative;
+}
+
+.slider-img {
+  width: 100%;
+}
+.slider-text {
+  position: absolute;
+  top: 30%;
+  left: 12.5%;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+  .slider-title {
+    border-radius: 0.5rem 0.5rem 0.5rem 0rem;
+    background: var(--slider-color);
+    padding: 0.75rem 1.13rem 0.75rem 1.13rem;
+    margin-bottom: 0.75rem;
+    color: rgb(255, 255, 255);
+  }
+  .slider-subtitle {
+    padding: 0.75rem 1.13rem 0.75rem 1.13rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    display: inline;
+    background: rgb(255, 255, 255);
+    color: var(--slider-color);
+    text-align: left;
+  }
+}
