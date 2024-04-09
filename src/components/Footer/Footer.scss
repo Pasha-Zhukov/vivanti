@@ -1,0 +1,24 @@
+.wrapper-footer-section {
+  display: flex;
+  justify-content: center;
+  background: var(--bg-footer);
+}
+
+.footer-block {
+  max-width: 1400px;
+  width: 100%;
+  height: 9.38rem;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.footer-block .description-footer {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}

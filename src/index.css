@@ -24,6 +24,10 @@
   --modal-text-color: rgb(115, 123, 225);
   --slider-color: rgb(115, 123, 225);
 
+  --color-input-border: rgb(255, 255, 255);
+  --color-input-focus-border: rgb(115, 123, 225);
+  --color-input-error-border: rgb(225, 115, 115);
+
   --font-size-large: 2.25rem;
   --font-size-main: 2.25rem;
   --font-size-medium: 1.31rem;
@@ -34,6 +38,9 @@
 
   --line-height-main: 130%;
   --letter-spacing-main: 0%;
+
+  --gap-grid: 20px;
+  --gap-grid-nested: 1.5rem;
 }
 
 button {
@@ -50,6 +57,7 @@ button {
   padding: 0.75rem 1.13rem 0.75rem 1.13rem;
 
   color: rgb(255, 255, 255);
+  font-family: Montserrat;
   font-size: 1.31rem;
   font-weight: 400;
   text-align: left;

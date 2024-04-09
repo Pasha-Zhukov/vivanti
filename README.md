@@ -1,4 +1,32 @@
-# React + TypeScript + Vite
+# Название Проекта
+
+Vivanti
+
+## Технологии
+
+- React
+- TypeScript
+- Vite
+
+## Начало работы
+
+Эти инструкции помогут вам запустить копию проекта на вашем локальном компьютере для разработки и тестирования.
+
+### Предварительные требования
+
+Убедитесь, что у вас установлены Node.js и npm. Вы можете проверить их версии, выполнив следующие команды:
+
+````bash
+node --version
+npm --version
+
+Установка
+Клонируйте репозиторий
+Установите зависимости
+npm install
+Запустите проект
+npm run dev
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -17,13 +45,13 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
-```
+};
+````
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
