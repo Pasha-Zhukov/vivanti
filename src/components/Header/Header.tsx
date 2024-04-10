@@ -13,7 +13,7 @@ export default function Header() {
         <Nav />
         <div className="contacts">
           <img src="../../../public/images/phone.svg" alt="phone" />
-          <div>
+          <div className="wrapper-contacts">
             <div className="phone">+7 123 456 7890</div>
             <div className="text">Звонок бесплатный</div>
           </div>

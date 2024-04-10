@@ -3,11 +3,7 @@ import "./Slider.scss";
 export default function Slider() {
   return (
     <div className="slider">
-      <img
-        className="slider-img"
-        src="../../../public/images/slider-img.svg"
-        alt="slider"
-      />
+      <div className="slider-img"></div>
       <h1 className="slider-text">
         <div>
           <div className="slider-title">точные результаты</div>

@@ -86,3 +86,43 @@
     margin-top: 0.25rem;
   }
 }
+
+@media (max-width: 1140px) {
+  .wrapper-form-section {
+    margin-bottom: 1.875rem;
+
+    .form-block {
+      width: 100%;
+      height: 100%;
+      padding: 1.88rem 1.125rem 1.88rem 1.125rem;
+      border-radius: 0;
+    }
+    p {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      margin-bottom: 2.25rem;
+      margin-top: 2, 25rem;
+      font-size: 1.75rem;
+    }
+    .form-inputs {
+      flex-direction: column;
+      gap: 1.1875rem;
+      margin-bottom: 2.25rem;
+      input {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .wrapper-form-section {
+    p {
+      text-align: start;
+    }
+    h2 {
+      text-align: start;
+    }
+  }
+}

@@ -18,14 +18,16 @@
   padding: 3rem 0;
 }
 
-.laboratory-title {
+.laboratory-title-pc {
   color: var(--color-primary);
   font-size: var(--font-size-large);
   font-weight: 600;
   text-align: left;
   margin-bottom: 2.25rem;
 }
-
+.laboratory-title-mobile {
+  display: none;
+}
 .description-laboratory {
   color: var(--color-secondary);
   font-size: var(--font-size-medium);
@@ -47,4 +49,33 @@ button::after {
 .laboratory-img {
   width: 50rem;
   height: 26.75rem;
+}
+
+@media (max-width: 1140px) {
+  .wrapper-laboratory-section {
+    display: block;
+    padding: 1.88rem 1.13rem 1.88rem 1.13rem;
+  }
+  .laboratory-title-pc {
+    display: none;
+  }
+  .laboratory-title-mobile {
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  .laboratory-block {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+
+    div {
+      order: 2;
+    }
+    img {
+      order: 1;
+    }
+  }
 }

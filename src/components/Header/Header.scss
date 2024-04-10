@@ -10,7 +10,7 @@ header {
 }
 
 .header-logo-title {
-  height: 150px;
+  height: 9.375rem;
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -18,7 +18,7 @@ header {
 }
 
 .main_title {
-  width: 179px;
+  min-width: 11.1875rem;
   color: var(--color-grey);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-regular);
@@ -47,5 +47,33 @@ header {
     line-height: var(--line-height-main);
     letter-spacing: var(--letter-spacing-main);
     text-align: left;
+  }
+}
+
+@media (max-width: 1140px) {
+  .header-logo-title {
+    display: block;
+    height: 3.625rem;
+  }
+  .wrapper {
+    width: 100%;
+    padding: 1.88rem 1.13rem 1.88rem 1.13rem;
+    align-items: start;
+  }
+  .contacts {
+    img {
+      margin-bottom: 0.5rem;
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+  }
+}
+@media (max-width: 720px) {
+  .wrapper {
+    align-items: start;
+    align-items: center;
+  }
+  .wrapper-contacts {
+    display: none;
   }
 }

@@ -21,3 +21,9 @@ nav {
   background: var(--color-primary-bg);
   color: rgb(79, 88, 201);
 }
+
+@media (max-width: 1140px) {
+  nav {
+    display: none;
+  }
+}

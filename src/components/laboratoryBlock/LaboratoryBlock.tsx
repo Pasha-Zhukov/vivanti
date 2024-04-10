@@ -5,9 +5,10 @@ import "./LaboratoryBlock.scss";
 export default function LaboratoryBlock() {
   return (
     <section id="laboratory" className="wrapper-laboratory-section">
+      <div className="laboratory-title-mobile">Лаборатория</div>
       <div className="laboratory-block">
         <div>
-          <div className="laboratory-title">Лаборатория</div>
+          <div className="laboratory-title-pc">Лаборатория</div>
           <div className="description-laboratory">
             Наша лаборатория предлагает широкий спектр медицинских исследований,
             проводимых опытными капибарами-лаборантами. Мы специализируемся на

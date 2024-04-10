@@ -1,5 +1,6 @@
 .welcome-block {
-  height: 12.8125rem;
+  padding: 6rem 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,5 +9,16 @@
     font-weight: 600;
     text-align: center;
     max-width: 87.5rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .welcome-block {
+    padding: 1.88rem 1.13rem 1.88rem 1.13rem;
+
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
   }
 }

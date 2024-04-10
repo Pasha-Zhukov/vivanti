@@ -2,9 +2,9 @@ import Modal from "../modal/Modal";
 
 import { useEffect, useState } from "react";
 import { Touched } from "./interface";
+import { submitFormData } from "../../services/formService";
 
 import "./FormComponent.scss";
-import { submitFormData } from "../../services/formService";
 
 function FormComponent() {
   const initialFormData = {
@@ -28,13 +28,6 @@ function FormComponent() {
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
 
-    try {
-      const response = await submitFormData(formData);
-      console.log("Ответ сервера:", response);
-    } catch (error) {
-      console.error("Ошибка при отправке данных:", error);
-    }
-
     setTouched({
       lastName: true,
       firstName: true,
@@ -48,6 +41,13 @@ function FormComponent() {
       console.log("Необходимо заполнить все поля.");
     } else {
       setIsModalOpen(true);
+    }
+
+    try {
+      const response = await submitFormData(formData);
+      console.log("Ответ сервера:", response);
+    } catch (error) {
+      console.error("Ошибка при отправке данных:", error);
     }
   };
 

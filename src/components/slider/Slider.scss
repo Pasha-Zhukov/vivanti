@@ -3,6 +3,15 @@
 }
 
 .slider-img {
+  width: 100vw; // 100% ширины видового окна
+  height: 38.25vw; // Высота 16:9 относительно ширины (например, для аспекта 16:9)
+  background-image: url("../../../public/images/slider-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover; // Покрывает всю область элемента, сохраняя пропорции
+  background-position: center; // Центрирует изображение
+}
+
+.slider-img {
   width: 100%;
 }
 .slider-text {
@@ -26,5 +35,24 @@
     background: rgb(255, 255, 255);
     color: var(--slider-color);
     text-align: left;
+  }
+}
+@media (max-width: 1140px) {
+  .slider-text {
+    position: absolute;
+    top: 40%;
+    left: 12.5%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .slider-text {
+    display: none;
+  }
+  .slider-img {
+    width: 100vw;
+    height: 81.25vw;
+    background-image: url("../../../public/images/slider-img-mobile.svg");
   }
 }
